@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import NavBar from "./components/Nav";
+import Card from "./components/Card";
+import katiezaferes from "./images/katie-zaferes.png"
 
-function App() {
+export default function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <NavBar />
+      <Card 
+        img={katiezaferes}
+        rating={"5.0"}
+        reviewCount={6}
+        country={"USA"}
+        title={"Life Lessons with Katie Zaferes"}
+        price={136}
+      />
     </div>
+
+    
   );
 }
-
-export default App;
