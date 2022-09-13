@@ -1,10 +1,11 @@
 import React from "react";
-import airbnbLogo from "../images/airbnb-logo.png";
 
 function NavBar() {
   return (
     <nav>
-      <img src={airbnbLogo} alt="arbnb-logo" className="nav--logo" />
+      {/* <img src={airbnbLogo} alt="arbnb-logo" className="nav--logo" /> */}
+      <img src="./images/airbnb-logo.png" alt="airbnb-logo" className="nav--logo" />
+
     </nav>
   );
 }
